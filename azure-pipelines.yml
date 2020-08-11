@@ -22,3 +22,7 @@ steps:
 - script: |
     npm install karma
   displayName: 'karma install'
+
+- script: |
+    npm start
+  displayName: 'start'
