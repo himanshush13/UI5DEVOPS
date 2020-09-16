@@ -28,5 +28,6 @@ steps:
   condition: succeededOrFailed()
   displayName: 'Publish Test Results '
   inputs:
-    testResultsFiles: '**/Results/Test-Results.xml'
+    testRunner: JUnit
+    testResultsFiles: '**/Test-Results.xml'
   continueOnError: true
