@@ -28,5 +28,5 @@ steps:
   condition: succeededOrFailed()
   displayName: 'Publish Test Results '
   inputs:
-    testResultsFiles: '$(System.DefaultWorkingDirectory)\Results\*.xml'
+    testResultsFiles: '**/Results/Test-Results.xml'
   continueOnError: true
