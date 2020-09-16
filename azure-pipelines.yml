@@ -29,12 +29,5 @@ steps:
   displayName: 'Publish Test Results '
   inputs:
     testRunner: JUnit
-    testResultsFiles: '$(System.DefaultWorkingDirectory)\*.xml'
-  continueOnError: true
-
-
-- task: PublishTestResults@2
-  displayName: 'Publish Test Results '
-  inputs:
-    testResultsFiles: '$(System.DefaultWorkingDirectory)\src\Results\*.xml'
+    testResultsFiles: '$(System.DefaultWorkingDirectory)/**/*.xml'
   continueOnError: true
