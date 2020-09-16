@@ -26,6 +26,7 @@ steps:
 
 - task: PublishTestResults@2
   condition: succeededOrFailed()
+  displayName: 'Publish Test Results '
   inputs:
-    testRunner: JUnit
-    testResultsFiles: '**/test-results.xml'
+    testResultsFiles: '$(System.DefaultWorkingDirectory)\Results\*.xml'
+  continueOnError: true
