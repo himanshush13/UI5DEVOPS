@@ -21,7 +21,7 @@ steps:
   displayName: 'npm install'
 
 - script: |
-    npm run test-azure
+    npm run test
   displayName: 'Execute Unit Tests'
 
 - task: PublishTestResults@2
